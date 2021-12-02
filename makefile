@@ -5,6 +5,7 @@ default: clean resume
 	mkdir -p build/resume/
 	mkdir -p build/assets/css/
 	cp index.html build/
+	cp favicon.svg build/
 	cp -r assets/images/ build/assets/images/
 	cp -r latex/resume.pdf build/resume/
 	sass --style=compressed --no-source-map assets/scss/styles.scss build/assets/css/styles.css
