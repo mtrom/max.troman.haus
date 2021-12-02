@@ -86,6 +86,11 @@ a.theme-link {
   }
 }
 
+.monospace {
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.85rem;
+}
+
 /*********** Resume **********/
 .resume-wrapper {
   border: 1px solid rgba(0, 0, 0, 0.025);
@@ -157,6 +162,7 @@ a.resume-link {
   }
   .item-content {
     font-size: 0.875rem;
+    text-align: justify;
 
     a {
       font-weight: bold;

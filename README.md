@@ -1,12 +1,21 @@
 ## Setup
+
+Install dependencies for resume:
 ```
 brew cask install basictex
 sudo tlmgr install enumitem
 ```
 
+Build locally and `nginx` should serve at http://localhost:8000/.
+
 ## Deployment
+To build locally:
 ```
-// TODO
+make local
+```
+To deploy to "production":
+```
+make deploy
 ```
 
 ## Cheatsheet
