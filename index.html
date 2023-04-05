@@ -33,10 +33,12 @@
             <div class="row align-items-center">
               <div class="resume-title col-12 col-md-6 col-lg-8 col-xl-9">
                 <h2 class="resume-name mb-0 text-uppercase">Max Tromanhauser</h2>
-                <div class="resume-tagline mb-3 mb-md-0">Master's Student in Computer Science</div>
+                <!-- <div class="resume-tagline mb-3 mb-md-0">Master's Student in Computer Science</div> -->
               </div>
               <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                <img class="resume-profile-image mb-3 mb-md-0 mr-md-5 ml-md-0 mx-auto" src="/assets/images/profile.jpg" alt="image">
+                <img class="resume-profile-image mb-3 mb-md-0 mr-md-5 ml-md-0 mx-auto" src="/assets/images/profile.jpg" alt="image"
+                     onmouseover="this.src='/assets/images/profile.png'" onmouseout="this.src='/assets/images/profile.jpg'"
+                >
               </div>
             </div>
           </div>
@@ -46,6 +48,16 @@
           <div class="resume-body">
             <div class="row">
               <div class="resume-main col-12 col-lg-8 col-xl-9 pr-0 pr-lg-5">
+                <section class="intro-section py-3">
+                  <div class="">
+                    <p>
+                      I'm a master's student at Brown studying computer science. My current research is in multi-party
+                      computation, advised by
+                      <a href="https://sites.google.com/view/peihanmiao/home">Peihan Miao</a>.
+                      My interests are in theoretical cryptography with a keen, aspirational focus in quantum cryptography.
+                    </p>
+                  </div>
+                </section>
                 <section class="work-section py-3">
                   <h3 class="text-uppercase resume-section-heading mb-4">Work Experience</h3>
 
@@ -122,7 +134,8 @@
                       <p>
                         <a href="http://www.cis.upenn.edu/~cis110/16sp/hw/hw03/caesar.html">Hail, Caesar!</a> was the assignment I'm most
                         proud of, which I wrote with help from other staff members. It teaches functions, array and string manipulation,
-                        and ASCII encoding, as well as introducing some basic cryptography concepts.
+                        and ASCII encoding, as well as introducing some basic cryptography concepts. It seems oddly
+                        prescient given my current research.
                       </p>
                     </div>
                   </div>
@@ -135,7 +148,7 @@
                   <h3 class="text-uppercase resume-section-heading mb-4">Info</h3>
                   <div class="item">
                     <ul class="list-unstyled resume-info-list">
-                      <li class="mb-2"><i class="fas fa-map-marker-alt fa-fw fa-lg mr-2"></i>New York</li>
+                      <li class="mb-2"><i class="fas fa-map-marker-alt fa-fw fa-lg mr-2"></i>Providence, RI</li>
                       <li class="mb-2"><i class="fas fa-file-alt fa-fw fa-lg mr-2"></i><a class="resume-link" href="/resume/">Resume</a></li>
                       <li class="mb-2"><i class="fas fa-envelope fa-fw fa-lg mr-2"></i><a class="resume-link monospace" href="mailto:max@troman.haus">max@troman.haus</a></li>
                       <li class="mb-2"><i class="fas fa-globe-americas fa-fw fa-lg mr-2"></i><a class="resume-link monospace" href="https://max.troman.haus">max.troman.haus</a></li>
