@@ -25,6 +25,7 @@
 \usepackage[parfill=0pt]{parskip} % Remove paragraph indentation
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
 \usepackage{ifthen} % Required for ifthenelse statements
+\usepackage{enumitem}
 
 \pagestyle{empty} % Suppress page numbers
 
@@ -91,6 +92,21 @@
 %----------------------------------------------------------------------------------------
 %	SECTION FORMATTING
 %----------------------------------------------------------------------------------------
+
+\newenvironment{grouping}[1]{
+    \medskip
+    \MakeUppercase{{\bf #1}}
+    \medskip
+    \hrule
+
+    \begin{items}
+}{
+    \end{items}
+}
+
+\newlist{items}{itemize}{3}
+\setlist[items,1]{leftmargin=0.25em, rightmargin=0.25em, label=}
+\setlist[items,2]{nosep, topsep=-5mm, leftmargin=1.5em, label=--}
 
 \iffalse
 % Defines the rSection environment for the large sections within the CV
