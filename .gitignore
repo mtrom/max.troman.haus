@@ -1,3 +1,11 @@
 build/
-latex/*.pdf
 .DS_Store
+
+# latex compilation outputs
+latex/resume.aux
+latex/resume.fdb_latexmk
+latex/resume.fls
+latex/resume.log
+latex/resume.out
+latex/resume.synctex.gz
+latex/resume.pdf
