@@ -13,7 +13,7 @@ default: clean resume
 local: default
 	-rm -r /var/www/$(name)
 	cp -r build /var/www/$(name)
-	cp nginx/local.conf /usr/local/etc/nginx/$(name).conf
+	cp nginx/local.conf /opt/homebrew/etc/nginx/$(name).conf
 	nginx -s reload
 
 deploy: default

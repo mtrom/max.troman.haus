@@ -10,7 +10,7 @@
 
 /*************************** Theme Colours****************************/
 // Define theme colour scheme
-$theme-color-primary: #54B689;
+$theme-color-primary: #008000;
 $theme-text-color-primary: #292929;
 $theme-text-color-secondary: lighten($theme-text-color-primary, 15%);
 $theme-text-color-light: lighten($theme-text-color-primary, 40%);
@@ -44,7 +44,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $theme-text-color-secondary;
-
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -91,6 +90,14 @@ a.theme-link {
   font-size: 0.85rem;
 }
 
+.top-line {
+  margin-top: 3rem;
+}
+
+.bottom-line {
+  margin-bottom: 3rem;
+}
+
 /*********** Resume **********/
 .resume-wrapper {
   border: 1px solid rgba(0, 0, 0, 0.025);
@@ -119,7 +126,6 @@ a.theme-link {
   font-weight: 900;
   letter-spacing: 0.4rem;
   color: $theme-color-primary;
-
 }
 
 .resume-tagline {
@@ -213,6 +219,9 @@ a.resume-link {
 
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
+  p {
+    text-align: justify;
+  }
 
   .resume-aside {
     border-left: 0;
@@ -222,6 +231,20 @@ a.resume-link {
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
+  p {
+    text-align: justify;
+  }
+
+  .resume-name {
+    font-size: 2rem;
+    letter-spacing: 0.05rem;
+    text-align: center;
+  }
+
+  .resume-title {
+    margin-bottom: 3rem;
+  }
+
   .resume-contact {
     border-left: 0;
   }
